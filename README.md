@@ -10,4 +10,5 @@
 
 Игра продолжается до тех пор, пока кто то не займет три больших поля (ничья так же возможна)
 
+https://nilian-nikolay.github.io/Super-tic-tac-toe/
 ![tic-tac](https://github.com/Nilian-Nikolay/Super-tic-tac-toe/assets/119882554/07395641-0adf-44bc-abf9-5aaa9896cb4e)
