@@ -1,0 +1,209 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.textTitle{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+
+}
+.big-cell{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
+    width: 83vh;
+    height: 83vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 6vh solid transparent;
+    background: rgb(209, 228, 239);
+    
+
+    /* box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.343); */
+    border-radius:7vh;
+    
+}
+.bg-cell{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    /* margin: 1vh; */
+    background: rgb(128, 128, 128);
+    width: 22.8vh;
+    height: 22.8vh;
+    border: 0.3px solid rgba(0, 0, 0, 0.374);
+    border-radius: 5vh;
+    box-shadow: 2px 2px 3px 2px rgba(1, 1, 10, 0.243);
+    transition: transform 0.3s; 
+    /* z-index: 2; */
+    
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center
+}
+.bg-cell:hover{
+    background: rgb(188, 188, 188);
+    /* border: 2px solid rgb(209, 228, 239); */
+    
+    box-shadow: 2px 2px 3px 2px rgba(1, 1, 10, 0.243), inset 0.01vh 0.01vh 0.5vh 0.5vh  rgb(164, 164, 164);
+    /* box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.343); */
+    
+    transform: scale(1.3); 
+    /* z-index: 1; */
+    
+} 
+.bg-cell.active {
+    background-color: rgba(127, 212, 127, 0.558); /* или другой видимый цвет */
+    transition: background-color 0.3s ease;
+}
+
+/* 
+.bg-cell:not(:hover) {
+    margin: 0.01vh; 
+} */
+
+
+
+
+
+
+
+
+.sml-cell{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    /* margin: 1vh; */
+    background: rgb(86, 86, 86);
+    width: 6.8vh;
+    height: 6.8vh;
+    border: 0.3px solid rgba(0, 0, 0, 0.374);
+    border-radius: 2vh;
+    box-shadow: 2px 2px 3px 2px rgba(1, 1, 10, 0.243);
+    transition: transform 0.3s; 
+    /* z-index: 2; */
+    
+}
+
+
+
+
+
+
+
+.krest{
+    color: rgb(65, 129, 174);
+    font-size: 8vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.circle{
+    color: rgb(193, 54, 54);
+    font-size: 8vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.biiigX,
+.biiigO,
+.biiigN{
+    position: absolute;
+    z-index: 1;
+    top: 50%; /* Положение по вертикали: середина контейнера */
+    left: 42.6%;
+    transform: translate(-50%, -50%);
+    font-size:  72vh;
+    /* margin-left: 7vh; */
+    /* left: 28vh; */
+    display: none;
+
+    font-weight: 500;
+    -webkit-text-stroke: 0.5vh rgb(0, 0, 0);
+    
+}
+.biiigX{color: rgb(78, 146, 194);}
+.biiigO{color: rgb(193, 54, 54);}
+.biiigN{color: rgb(132, 143, 70);}
+
+.smlX,
+.smlO{
+    position: absolute;
+    /* width: 21vh;
+    height: 13vh; */
+    
+    top: 50%; /* Положение по вертикали: середина контейнера */
+    left: -47%;
+    transform: translate(-50%, -50%);
+    font-size:  22vh;
+    font-weight: 600;
+    -webkit-text-stroke: 0.5vh rgb(0, 0, 0);
+    margin-left: 22vh;
+    /* margin-top: -5vh; */
+    /* left: 28vh; */
+    display: none;
+    z-index: 2;
+    /* background-color: rgba(0, 0, 0, 0.567); */
+
+    padding: 5vh 1vh;
+    
+}
+.smlX{color: rgb(78, 146, 194);}
+.smlO{color: rgb(193, 54, 54);}
+.non{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.567);
+    width: 21vh;
+    height: 13vh;
+    padding: 5vh 1vh;
+    border-radius: 5vh;
+    color:rgb(255, 255, 201);
+    top: 50%; /* Положение по вертикали: середина контейнера */
+    left: -47%;
+    transform: translate(-50%, -50%);
+    font-size:  10vh;
+    margin-left: 22vh;
+    display: none;
+    z-index: 2;
+}
+.Rules{
+    font-size: 4.5vh;
+    margin-right: 8vh;
+    margin-left: 9vh;
+}
+.Player{
+    /* position: absolute; */
+    font-size: 4.5vh;
+    left: 4vh;
+    top: 10vh;
+    color: rgb(135, 111, 233);
+    font-weight: 600;
+    -webkit-text-stroke: 0.08vh rgb(0, 0, 0);
+}
+.btns{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(188, 188, 188);
+    border-radius: 10px;
+}

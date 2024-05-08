@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Крестики-нолики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="textTitle">Super Крестики-нолики</div> -->
+    <div class="big-board">
+        <div class="container">
+            
+            
+            
+            <!-- <div class="Rules">Правила</div> -->
+            <div class="big-pole">
+                
+                <div class="big-cell">
+                    <div class="biiigX" id="biiigX">X</div>
+                    <div class="biiigO" id="biiigO">O</div>
+                    <div class="biiigN" id="biiigN">NON</div>
+                    
+                    
+                    <div class="bg-cell" id="bg-cell-1">
+                        <div class="sml-cell" id="cell-1-1"></div>
+                        <div class="sml-cell" id="cell-1-2"></div>
+                        <div class="sml-cell" id="cell-1-3"></div>
+                        <div class="sml-cell" id="cell-1-4"></div>
+                        <div class="sml-cell" id="cell-1-5"></div>
+                        <div class="sml-cell" id="cell-1-6"></div>
+                        <div class="sml-cell" id="cell-1-7"></div>
+                        <div class="sml-cell" id="cell-1-8"></div>
+                        <div class="sml-cell" id="cell-1-9"></div>
+                        <div class="smlX" id="smlX1">X</div>
+                        <div class="smlO" id="smlO1">O</div>
+                        <div class="non" id="non1">NON</div>
+                    </div>
+                    
+                    <div class="bg-cell" id="bg-cell-2">
+                        <div class="sml-cell" id="cell-2-1"></div>
+                        <div class="sml-cell" id="cell-2-2"></div>
+                        <div class="sml-cell" id="cell-2-3"></div>
+                        <div class="sml-cell" id="cell-2-4"></div>
+                        <div class="sml-cell" id="cell-2-5"></div>
+                        <div class="sml-cell" id="cell-2-6"></div>
+                        <div class="sml-cell" id="cell-2-7"></div>
+                        <div class="sml-cell" id="cell-2-8"></div>
+                        <div class="sml-cell" id="cell-2-9"></div>
+                        <div class="smlX" id="smlX2">X</div>
+                        <div class="smlO" id="smlO2">O</div>
+                        <div class="non" id="non2">NON</div>
+                    </div>
+
+                    <div class="bg-cell" id="bg-cell-3">
+                        <div class="sml-cell" id="cell-3-1"></div>
+                        <div class="sml-cell" id="cell-3-2"></div>
+                        <div class="sml-cell" id="cell-3-3"></div>
+                        <div class="sml-cell" id="cell-3-4"></div>
+                        <div class="sml-cell" id="cell-3-5"></div>
+                        <div class="sml-cell" id="cell-3-6"></div>
+                        <div class="sml-cell" id="cell-3-7"></div>
+                        <div class="sml-cell" id="cell-3-8"></div>
+                        <div class="sml-cell" id="cell-3-9"></div>
+                        <div class="smlX" id="smlX3">X</div>
+                        <div class="smlO" id="smlO3">O</div>
+                        <div class="non" id="non3">NON</div>
+                    </div>
+
+                    <div class="bg-cell" id="bg-cell-4">
+                        <div class="sml-cell" id="cell-3-1"></div>
+                        <div class="sml-cell" id="cell-3-2"></div>
+                        <div class="sml-cell" id="cell-3-3"></div>
+                        <div class="sml-cell" id="cell-3-4"></div>
+                        <div class="sml-cell" id="cell-3-5"></div>
+                        <div class="sml-cell" id="cell-3-6"></div>
+                        <div class="sml-cell" id="cell-3-7"></div>
+                        <div class="sml-cell" id="cell-3-8"></div>
+                        <div class="sml-cell" id="cell-3-9"></div>
+                        <div class="smlX" id="smlX4">X</div>
+                        <div class="smlO" id="smlO4">O</div>
+                        <div class="non" id="non4">NON</div>
+                    </div>
+
+                    <div class="bg-cell" id="bg-cell-5">
+                        <div class="sml-cell" id="cell-3-1"></div>
+                        <div class="sml-cell" id="cell-3-2"></div>
+                        <div class="sml-cell" id="cell-3-3"></div>
+                        <div class="sml-cell" id="cell-3-4"></div>
+                        <div class="sml-cell" id="cell-3-5"></div>
+                        <div class="sml-cell" id="cell-3-6"></div>
+                        <div class="sml-cell" id="cell-3-7"></div>
+                        <div class="sml-cell" id="cell-3-8"></div>
+                        <div class="sml-cell" id="cell-3-9"></div>
+                        <div class="smlX" id="smlX5">X</div>
+                        <div class="smlO" id="smlO5">O</div>
+                        <div class="non" id="non5">NON</div>
+                    </div>
+
+                    <div class="bg-cell" id="bg-cell-6">
+                        <div class="sml-cell" id="cell-3-1"></div>
+                        <div class="sml-cell" id="cell-3-2"></div>
+                        <div class="sml-cell" id="cell-3-3"></div>
+                        <div class="sml-cell" id="cell-3-4"></div>
+                        <div class="sml-cell" id="cell-3-5"></div>
+                        <div class="sml-cell" id="cell-3-6"></div>
+                        <div class="sml-cell" id="cell-3-7"></div>
+                        <div class="sml-cell" id="cell-3-8"></div>
+                        <div class="sml-cell" id="cell-3-9"></div>
+                        <div class="smlX" id="smlX6">X</div>
+                        <div class="smlO" id="smlO6">O</div>
+                        <div class="non" id="non6">NON</div>
+                    </div>
+
+                    <div class="bg-cell" id="bg-cell-7">
+                        <div class="sml-cell" id="cell-3-1"></div>
+                        <div class="sml-cell" id="cell-3-2"></div>
+                        <div class="sml-cell" id="cell-3-3"></div>
+                        <div class="sml-cell" id="cell-3-4"></div>
+                        <div class="sml-cell" id="cell-3-5"></div>
+                        <div class="sml-cell" id="cell-3-6"></div>
+                        <div class="sml-cell" id="cell-3-7"></div>
+                        <div class="sml-cell" id="cell-3-8"></div>
+                        <div class="sml-cell" id="cell-3-9"></div>
+                        <div class="smlX" id="smlX7">X</div>
+                        <div class="smlO" id="smlO7">O</div>
+                        <div class="non" id="non7">NON</div>
+                    </div>
+
+                    <div class="bg-cell" id="bg-cell-8">
+                        <div class="sml-cell" id="cell-3-1"></div>
+                        <div class="sml-cell" id="cell-3-2"></div>
+                        <div class="sml-cell" id="cell-3-3"></div>
+                        <div class="sml-cell" id="cell-3-4"></div>
+                        <div class="sml-cell" id="cell-3-5"></div>
+                        <div class="sml-cell" id="cell-3-6"></div>
+                        <div class="sml-cell" id="cell-3-7"></div>
+                        <div class="sml-cell" id="cell-3-8"></div>
+                        <div class="sml-cell" id="cell-3-9"></div>
+                        <div class="smlX" id="smlX8">X</div>
+                        <div class="smlO" id="smlO8">O</div>
+                        <div class="non" id="non8">NON</div>
+                    </div>
+
+                    <div class="bg-cell" id="bg-cell-9">
+                        <div class="sml-cell" id="cell-3-1"></div>
+                        <div class="sml-cell" id="cell-3-2"></div>
+                        <div class="sml-cell" id="cell-3-3"></div>
+                        <div class="sml-cell" id="cell-3-4"></div>
+                        <div class="sml-cell" id="cell-3-5"></div>
+                        <div class="sml-cell" id="cell-3-6"></div>
+                        <div class="sml-cell" id="cell-3-7"></div>
+                        <div class="sml-cell" id="cell-3-8"></div>
+                        <div class="sml-cell" id="cell-3-9"></div>
+                        <div class="smlX" id="smlX9">X</div>
+                        <div class="smlO" id="smlO9">O</div>
+                        <div class="non" id="non9">NON</div>
+                    </div>
+
+                </div>
+
+                
+                
+                
+                
+                <!-- <div class="NewGame">Новая игра</div> -->
+                
+            </div>
+            
+            <div class="Player">Сейчас ходят: <span id="spanPlayer">X</span></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
